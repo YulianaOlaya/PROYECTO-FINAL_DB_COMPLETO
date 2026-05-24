@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas - MarketHub</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style/style_inicio.css">
+    <link rel="stylesheet" href="style/style_empresas.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a class="logo">MarketHub</a>
+
+        <ul class="navbar-nav">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="#emprende">Emprende</a></li>
+            <li><a href="empresas.html">Empresas</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="btns-nav">
+            <button class="iniciar" onclick="window.location.href='iniciar_sesion.html'">Iniciar sesión</button>
+            <button class="registrarse">Registrarse</button>
+        </div>
+    </nav>
+
+    <div class="barra-colores"></div>
+
+
+    <main class="main-perfil-empresa">
+        <div class="contenedor-presentacion">
+            <p class="label-perfil">Perfil empresa</p>
+            
+            <div class="header-empresa">
+                <div class="logo-empresa-wrapper">
+                    <img src="img/oreanas2.jpg" alt="Oreanas Logo">
+                </div>
+                <div class="info-empresa-wrapper">
+                    <h2>Oreanas</h2>
+                    <p class="sub-label">Sobre la empresa...</p>
+                    <p class="texto-descripcion">Nuestro emprendimiento se dedica a crear galletas artesanales rellenas que convierten un antojo en una experiencia. Elaboramos cada galleta con ingredientes de alta calidad, horneadas al momento para lograr una textura perfecta: crujiente por fuera, suave por dentro y con rellenos irresistibles que se derriten en cada mordida.</p>
+                    <p class="texto-descripcion">Nos inspira la creatividad y la innovación en sabores, por eso combinamos ingredientes clásicos con propuestas únicas como chocolate intenso, crema de avellana, caramelo, cheesecake y frutas. Cada galleta está pensada para sorprender, compartir y disfrutar.</p>
+                    <p class="texto-descripcion">Más que vender galletas, buscamos ofrecer momentos dulces, memorables y llenos de sabor, donde cada producto refleje el cuidado artesanal, la pasión por la repostería y una estética moderna que haga de cada galleta algo tan delicioso como irresistible.</p>
+                </div>
+            </div>
+
+            <div class="seccion-productos-rosa">
+                <div class="carousel-contenedor">
+                    
+                    <div class="card-producto-premium">
+                        <div class="card-img-box">
+                            <img src="img/producto1.jpg" alt="Producto">
+                        </div>
+                        <div class="card-info-box">
+                            <h4>Accesorios</h4>
+                            <p class="card-precio">$10.000</p>
+                            <p class="card-sub">Descripción</p>
+                            <div class="card-rating">
+                                <span class="estrellas-icon">★☆☆☆☆</span>
+                                <span class="reviews-label">Reviews</span>
+                            </div>
+                            <button class="btn-comprar-rosa">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="card-producto-premium">
+                        <div class="card-img-box">
+                            <img src="img/producto2.jpg" alt="Producto">
+                        </div>
+                        <div class="card-info-box">
+                            <h4>Collares</h4>
+                            <p class="card-precio">$15.000</p>
+                            <p class="card-sub">Descripción</p>
+                            <div class="card-rating">
+                                <span class="estrellas-icon">★☆☆☆☆</span>
+                                <span class="reviews-label">Reviews</span>
+                            </div>
+                            <button class="btn-comprar-rosa">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="card-producto-premium">
+                        <div class="card-img-box">
+                            <img src="img/producto3.jpg" alt="Producto">
+                        </div>
+                        <div class="card-info-box">
+                            <h4>Brownie</h4>
+                            <p class="card-precio">$8.000</p>
+                            <p class="card-sub">Descripción</p>
+                            <div class="card-rating">
+                                <span class="estrellas-icon">★☆☆☆☆</span>
+                                <span class="reviews-label">Reviews</span>
+                            </div>
+                            <button class="btn-comprar-rosa">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="card-producto-premium">
+                        <div class="card-img-box">
+                            <img src="img/producto4.jpg" alt="Producto">
+                        </div>
+                        <div class="card-info-box">
+                            <h4>Camisetas</h4>
+                            <p class="card-precio">$20.000</p>
+                            <p class="card-sub">Descripción</p>
+                            <div class="card-rating">
+                                <span class="estrellas-icon">★☆☆☆☆</span>
+                                <span class="reviews-label">Reviews</span>
+                            </div>
+                            <button class="btn-comprar-rosa">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="flecha-next">
+                        <div class="circulo-flecha">
+                            <span>&rarr;</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        /* ESTILOS ESPECÍFICOS PARA ESTA SECCIÓN */
+        .main-perfil-empresa {
+            padding: 40px 5%;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .label-perfil {
+            font-size: 13px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .header-empresa {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+            align-items: flex-start;
+        }
+
+        .logo-empresa-wrapper img {
+            width: 180px;
+            height: 180px;
+            border-radius: 25px; /* Bordes redondeados exactos */
+            object-fit: cover;
+        }
+
+        .info-empresa-wrapper h2 {
+            font-size: 26px;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .sub-label {
+            font-style: italic;
+            font-size: 11px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .texto-descripcion {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 12px;
+            max-width: 950px;
+        }
+
+        /* CONTENEDOR ROSA */
+        .seccion-productos-rosa {
+            background-color: #FFF5F6; /* Color rosa de la imagen */
+            padding: 40px 25px;
+            border-radius: 18px;
+        }
+
+        .carousel-contenedor {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        /* DISEÑO DE TARJETA */
+        .card-producto-premium {
+            background-color: #ffffff;
+            min-width: 220px;
+            border-radius: 12px;
+            border: 1px solid #e8e8e8;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+        .card-img-box {
+            padding: 10px;
+        }
+
+        .card-img-box img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card-info-box {
+            padding: 0 15px 15px 15px;
+        }
+
+        .card-info-box h4 {
+            font-size: 14px;
+            margin: 0;
+            color: #333;
+        }
+
+        .card-precio {
+            font-weight: 600;
+            font-size: 13px;
+            margin: 2px 0;
+        }
+
+        .card-sub {
+            font-size: 11px;
+            color: #999;
+            margin-bottom: 8px;
+        }
+
+        .card-rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        .estrellas-icon { color: #FFB800; font-size: 14px; }
+        .reviews-label { font-size: 10px; font-weight: 700; color: #333; }
+
+        /* BOTÓN ROSA */
+        .btn-comprar-rosa {
+            width: 100%;
+            background-color: #F89494; /* Color exacto del botón */
+            color: white;
+            border: none;
+            padding: 9px;
+            border-radius: 7px;
+            font-weight: 600;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-comprar-rosa:hover {
+            background-color: #f37b7b;
+        }
+
+        /* FLECHA */
+        .circulo-flecha {
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #556B2F;
+            font-size: 22px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- FOOTER -->
+    <section id="contacto" class="footer-container">
+
+        <div class="footer-col branding">
+            <h1 class="logo1">MarketHub</h1>
+            <p>Correo: MarketHub_OFC@gmail.com</p>
+
+            <div class="social-links">
+                <p>Redes sociales</p>
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-col resources">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Emprendimientos</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col contact-form">
+            <h3>Contacto</h3>
+            <form>
+                <div class="contacto">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Mensaje"></textarea>
+                <button class="enviar">Enviar</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="derechos">
+        <h3>© 2026 MarketHub. Todos los derechos reservados</h3>
+    </section>
+
+</body>
+
+</html>

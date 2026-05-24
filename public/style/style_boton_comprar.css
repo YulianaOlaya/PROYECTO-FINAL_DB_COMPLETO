@@ -1,0 +1,16 @@
+.btn-visitar {
+    background: #F48484;
+    color: white;
+    border: none;
+    padding: 10px 60px; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-visitar:hover {
+    background: #e06a6a;
+    transform: scale(1.05);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="style/style_registrarse.css">
+</head>
+
+<body>
+    <div class="registrarse">
+        <h1>MarketHub</h1>
+        <h2>Crea tu cuenta</h2>
+
+        <section>
+            <form>
+                <div class="input-group">
+                    <label>Dirección de correo electrónico</label>
+                    <input type="email" id="correo" placeholder="Escribe tu correo">
+                </div>
+
+                <div class="input-group">
+                    <label>Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre completo">
+                </div>
+
+                <div class="input-group">
+                    <label>Contraseña</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="contraseña" placeholder="Crea tu contraseña">
+                        </div>
+                </div>
+
+                <button id="postBtn" type="submit" class="submit-btn">Crea tu cuenta</button>
+                <p id="postSqlResult"></p>
+            </form>
+
+        </section>
+
+        <p class="login-footer">Ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
+
+    </div>
+
+    <script src="./js/sql.js"></script>
+</body>
+
+</html>

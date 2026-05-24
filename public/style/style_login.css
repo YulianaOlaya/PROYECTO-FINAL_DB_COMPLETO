@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTENEDOR */
+.login-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.login-container h1 {
+    margin-bottom: 5px;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* BOTONES SOCIALES */
+.btn-social {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: white;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-social img {
+    width: 20px;
+}
+
+/* DIVISOR */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.divider span {
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+/* INPUTS */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 13px;
+    color: #777;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+/* BOTÓN LOGIN */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #e68b8b;
+    color: white;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* TEXTO */
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+/* ICONOS */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 20px;
+    margin: 0 8px;
+    opacity: 0.6;
+}

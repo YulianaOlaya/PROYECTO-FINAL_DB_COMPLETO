@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas - MarketHub</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style/style_inicio.css">
+    <link rel="stylesheet" href="style/style_empresas.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a class="logo">MarketHub</a>
+
+        <ul class="navbar-nav">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="#emprende">Emprende</a></li>
+            <li><a href="empresas.html">Empresas</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="btns-nav">
+            <button class="iniciar" onclick="window.location.href='iniciar_sesion.html'">Iniciar sesión</button>
+            <button class="registrarse">Registrarse</button>
+        </div>
+    </nav>
+
+    <div class="barra-colores"></div>
+
+    <!-- CONTENIDO -->
+    <section class="empresas-page">
+        <div class="empresas-container">
+
+            <!-- FILTROS -->
+            <div class="filtros">
+                <h3>Filtros</h3>
+                <h4>Categoría</h4>
+                <ul>
+                    <li>Comida</li>
+                    <li>Hogar</li>
+                    <li>Ropa</li>
+                    <li>Accesorios</li>
+                </ul>
+            </div>
+
+            <!-- TARJETAS -->
+            <div class="cards">
+
+                <div class="tarjeta-empresa">
+                    <img src="img/camil.jpg">
+                    <h5>Camil</h5>
+                    <p>Camisa con estampado</p>
+                    <a href="perfilcamil.html" style="text-decoration: none;">
+                        <button class="btn-visitar">Visitar</button>
+                    </a>
+                </div>
+
+                <div class="tarjeta-empresa">
+                    <img src="img/antojitos.jpg">
+                    <h5>Antojitos</h5>
+                    <p>Postres Artesanales</p>
+                    <a href="perfilantojitos.html" style="text-decoration: none;">
+                        <button class="btn-visitar">Visitar</button>
+                    </a>
+                </div>
+
+                <div class="tarjeta-empresa">
+                    <img src="img/pantl.jpg">
+                    <h5>Pantl</h5>
+                    <p>Pantalones Clásicos</p>
+                    <a href="perfilpantl.html" style="text-decoration: none;">
+                        <button class="btn-visitar">Visitar</button>
+                    </a>
+                </div>
+
+                <div class="tarjeta-empresa">
+                    <img src="img/oreanas.jpg">
+                    <h5>Oreanas</h5>
+                    <p>Galletas Artesanales</p>
+                    <a href="perfiloreanas.html" style="text-decoration: none;">
+                        <button class="btn-visitar">Visitar</button>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="contacto" class="footer-container">
+
+        <div class="footer-col branding">
+            <h1 class="logo1">MarketHub</h1>
+            <p>Correo: MarketHub_OFC@gmail.com</p>
+
+            <div class="social-links">
+                <p>Redes sociales</p>
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-col resources">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Emprendimientos</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col contact-form">
+            <h3>Contacto</h3>
+            <form>
+                <div class="contacto">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Mensaje"></textarea>
+                <button class="enviar">Enviar</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="derechos">
+        <h3>© 2026 MarketHub. Todos los derechos reservados</h3>
+    </section>
+
+</body>
+
+</html>

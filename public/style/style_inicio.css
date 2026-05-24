@@ -1,0 +1,356 @@
+/*navbar*/
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 35px;
+  font-weight: 500;
+  color: #F48484;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #ffffff;
+}
+
+.navbar-nav {
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.btns-nav {
+  display: flex;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.iniciar {
+  background: transparent;
+  border: 2px solid #F3B8B5;
+  color: #F3B8B5;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.registrarse {
+    background: #7aa892;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*separador de colores*/
+.barra-colores {
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #7aa8d8,
+    #b89bd9,
+    #e08a8a
+  );
+}
+
+/*seccion presentacion*/
+.presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  background: #ffffff;
+  height: 700px;
+}
+
+.texto {
+  max-width: 500px;
+}
+
+.texto h1 {
+    color: #236C51;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.texto h3 {
+    color: #000000;
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.texto p {
+  color: #000000;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.imagen-presentacion img {
+  width: 900px;
+}
+
+.btns-presentacion .explorar {
+  background: #F48484;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.divisor {
+  width: 80%;
+  height: 1px;
+  background: #000;
+  margin: 0px auto;
+}
+
+.banner {
+  background: #FEF3F3; 
+  padding: 70px 0;     
+}
+
+/* secccion cards */
+.productos-seccion {
+    padding: 60px 8%;
+    background-color: #FEF3F3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo-seccion {
+    font-family: 'Cormorant Garamond', serif;
+    color: #236C51;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contenedor-flex {
+    padding: 60px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+    position: relative;
+    align-items: stretch; /* hace que todas las tarjetas tengan la misma altura */
+}
+
+.tarjeta {
+    flex: 0 0 280px;
+    height: 450px;
+    background: #fff;
+    border: 2px solid #8F926D;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column; /* Alinea el contenido de la tarjeta de arriba a abajo */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor-img {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+.contenedor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detalle {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.detalle h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.precio {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: #FFBB00;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.rating span {
+    color: #555;
+    margin-left: 5px;
+}
+
+.btn-comprar {
+    width: 100px;
+    margin-top: auto;
+    background-color: #F48484;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.imagen-presentacion2 img {
+  width: 800px;
+}
+
+
+
+/* footer */
+.footer-container {
+    background-color: #FEF3F3;
+    padding: 80px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    
+}
+
+
+.logo1 {
+    font-family: serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.branding p {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+
+.resources h3 {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.resources ul {
+    list-style: none;
+    padding-left: 0;  
+    margin: 0;        
+    text-align: left; 
+}
+
+.resources ul li {
+    margin-bottom: 12px;
+}
+
+.resources ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.95rem;
+}
+
+
+.contact-form h3 {
+    font-size: 2rem;
+    color: #6b6b47; 
+    margin-bottom: 25px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto {
+    display: flex;
+    gap: 10px;
+}
+
+.contacto input {
+    flex: 1;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #b5b59a;
+    border-radius: 8px;
+    background-color: transparent;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.enviar {
+    background-color: #f7a099; 
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s; 
+}
+
+.derechos {
+    background-color: #FEF3F3;
+    height: 50px;
+    display: grid;
+    place-items: center; /* Centra en ambos ejes a la vez */
+
+}
+
+.derechos h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+}

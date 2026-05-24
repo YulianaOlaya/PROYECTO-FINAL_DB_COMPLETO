@@ -1,0 +1,73 @@
+.catalogo-container {
+    display: flex;
+    padding: 60px 100px;
+    gap: 50px;
+    background: #FEF3F3;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* filtros */
+.filtros {
+    width: 220px;
+}
+
+.filtros ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filtros li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* GRID (CLAVE) */
+.catalogo-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    flex: 1;
+}
+
+/* tarjetas */
+.card-producto {
+    background: white;
+    border: 2px solid #8F926D;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card-producto:hover {
+    transform: translateY(-5px);
+}
+
+.card-producto img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+..card-producto h4 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card-producto p {
+    font-weight: 400;
+}
+
+.rating {
+    color: #FFBB00;
+    margin-bottom: 10px;
+}
+
+.card-producto button {
+    width: 100%;
+    background: #F48484;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+}

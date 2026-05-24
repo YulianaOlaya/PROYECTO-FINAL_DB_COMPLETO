@@ -1,0 +1,103 @@
+/* Configuración básica */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.registrarse {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.registrarse h1 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+.registrarse h2 {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+
+/* Botón Google */
+.google-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Divisor */
+.divider {
+    margin: 20px 0;
+    color: #888;
+    display: flex;
+    align-items: center;
+}
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+    margin: 0 10px;
+}
+
+/* Inputs */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Importante para el tamaño */
+}
+
+/* Botón Principal */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #f7a09e; /* Color coral de tu imagen */
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-footer {
+    font-size: 13px;
+    margin-top: 20px;
+}
+.login-footer a {
+    color: #635bff;
+    text-decoration: none;
+    font-weight: bold;
+}

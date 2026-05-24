@@ -1,0 +1,139 @@
+/* SECCIÓN GENERAL  */
+.empresas-page {
+    background: #ffffff;
+    padding-top: 80px;   /* separación del navbar */
+    padding-bottom: 60px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.empresas-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+/* FILTROS  */
+.filtros {
+    width: 230px;
+    font-family: 'Poppins', sans-serif;
+    flex-shrink: 0;
+}
+
+.filtros h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.filtros h4 {
+    font-size: 1.1rem;
+    margin: 25px 0 12px 0;
+    color: #555;
+}
+
+.filtros ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filtros li {
+    margin-bottom: 12px;
+    cursor: pointer;
+    color: #666;
+    transition: 0.3s;
+}
+
+.filtros li:hover {
+    color: #F48484;
+    padding-left: 5px;
+}
+
+/*  TARJETAS (GRID) */
+.cards {
+    display: grid;
+
+    /*  4 tarjetas en fila */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+    flex: 1;
+}
+
+/*  TARJETA */
+.tarjeta-empresa {
+    background: #fff;
+    border: 2px solid #8F926D;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+
+    transition: all 0.3s ease;
+
+    /* sombra suave */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.tarjeta-empresa:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/*  IMAGEN  */
+.tarjeta-empresa img {
+    width: 100%;
+    height: 170px; /* ajustado para que quepan 4 */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* ===== TEXTO ===== */
+.tarjeta-empresa h5 {
+    font-size: 1.2rem;
+    margin: 8px 0;
+    color: #333;
+}
+
+.tarjeta-empresa p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/* ===== BOTÓN ===== */
+.btn-visitar {
+    background: #F48484;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-visitar:hover {
+    background: #e06a6a;
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE  */
+@media (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .empresas-container {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

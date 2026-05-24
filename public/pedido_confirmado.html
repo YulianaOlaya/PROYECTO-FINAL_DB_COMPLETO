@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas - MarketHub</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style/style_inicio.css">
+    <link rel="stylesheet" href="style/style_empresas.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a class="logo">MarketHub</a>
+
+        <ul class="navbar-nav">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="#emprende">Emprende</a></li>
+            <li><a href="empresas.html">Empresas</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="btns-nav">
+            <button class="iniciar" onclick="window.location.href='iniciar_sesion.html'">Iniciar sesión</button>
+            <button class="registrarse">Registrarse</button>
+        </div>
+    </nav>
+
+    <div class="barra-colores"></div>
+
+
+
+<main class="main-layout">
+        <aside class="sidebar-cliente">
+            <div class="panel-box">Panel Cliente</div>
+            <div class="decor-burbujas"></div>
+        </aside>
+
+        <section class="confirmacion-container">
+            <div class="confirmacion-content">
+                <div class="check-circle">
+                    <div class="check-icon">✓</div>
+                </div>
+
+                <h1 class="confirmacion-titulo">¡PEDIDO CONFIRMADO!</h1>
+                
+                <p class="confirmacion-texto">
+                    Tu orden ha sido recibida y está siendo procesada.<br>
+                    Te avisaremos cuando el pedido sea enviado
+                </p>
+
+                <div class="confirmacion-btns">
+                    <a href="pedidos.html" class="btn-confirmar">Seguir pedido</a>
+                    <a href="catalogo.html" class="btn-seguir-comprando">Seguir comprando</a>
+                </div>
+            </div>
+
+            <div class="stars-group">
+                <span class="star s1">✦</span>
+                <span class="star s2">✦</span>
+                <span class="star s3">✦</span>
+                <span class="star s4">✦</span>
+            </div>
+        </section>
+    </main>
+
+    <style>
+        .main-layout {
+            display: flex;
+            min-height: 80vh;
+            background-color: #fff;
+        }
+
+        /* SIDEBAR IZQUIERDO */
+        .sidebar-cliente {
+            width: 30%;
+            background-color: #FFF0F1; 
+            padding: 40px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #f0f0f0;
+        }
+
+        .panel-box {
+            background: white;
+            border: 1px solid #333;
+            padding: 10px 20px;
+            font-size: 14px;
+            width: fit-content;
+        }
+
+        .decor-burbujas {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            background-image: url('img/decoracion-hojas.png'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            opacity: 0.8;
+        }
+
+        /* CONTENEDOR DERECHO */
+        .confirmacion-container {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: white;
+        }
+
+        .confirmacion-content {
+            text-align: center;
+            z-index: 5;
+            max-width: 500px;
+        }
+
+        /* CHECK VERDE */
+        .check-circle {
+            width: 120px;
+            height: 120px;
+            background-color: #F1F9F5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+        }
+
+        .check-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #84B19B;
+            border-radius: 50%;
+            color: white;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .confirmacion-titulo {
+            font-family: 'Cormorant Garamond', serif;
+            color: #2D5A41;
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .confirmacion-texto {
+            color: #555;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        /* BOTONES */
+        .confirmacion-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn-confirmar {
+            background-color: #F89494;
+            color: white;
+            text-decoration: none;
+            padding: 12px 40px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .btn-seguir-comprando {
+            background-color: transparent;
+            color: #F89494;
+            text-decoration: none;
+            padding: 12px 40px;
+            border: 2px solid #F89494;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        /* ESTRELLITAS POSICIONADAS */
+        .stars-group {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+        }
+
+        .star {
+            position: absolute;
+            font-size: 24px;
+        }
+
+        .s1 { color: #FF9EE2; top: 0; left: 0; }
+        .s2 { color: #AEE2FF; top: -10px; left: 30px; font-size: 18px; }
+        .s3 { color: #D1AFFF; top: 30px; left: 40px; }
+        .s4 { color: #FFF3A3; top: 40px; left: 10px; font-size: 14px; }
+
+        @media (max-width: 768px) {
+            .main-layout { flex-direction: column; }
+            .sidebar-cliente { width: 100%; min-height: 100px; }
+            .confirmacion-container { width: 100%; padding: 50px 20px; }
+        }
+    </style>
+
+
+
+
+    <!-- FOOTER -->
+    <section id="contacto" class="footer-container">
+
+        <div class="footer-col branding">
+            <h1 class="logo1">MarketHub</h1>
+            <p>Correo: MarketHub_OFC@gmail.com</p>
+
+            <div class="social-links">
+                <p>Redes sociales</p>
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-col resources">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Emprendimientos</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col contact-form">
+            <h3>Contacto</h3>
+            <form>
+                <div class="contacto">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Mensaje"></textarea>
+                <button class="enviar">Enviar</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="derechos">
+        <h3>© 2026 MarketHub. Todos los derechos reservados</h3>
+    </section>
+
+</body>
+
+</html>

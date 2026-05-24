@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas - MarketHub</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style/style_inicio.css">
+    <link rel="stylesheet" href="style/style_empresas.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a class="logo">MarketHub</a>
+
+        <ul class="navbar-nav">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="#emprende">Emprende</a></li>
+            <li><a href="empresas.html">Empresas</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="btns-nav">
+            <button class="iniciar" onclick="window.location.href='iniciar_sesion.html'">Iniciar sesión</button>
+            <button class="registrarse">Registrarse</button>
+        </div>
+    </nav>
+
+    <div class="barra-colores"></div>
+
+
+
+
+
+<main class="cart-main-container">
+        <div class="cart-container-pink">
+            <h2 class="cart-title">Shopping Cart</h2>
+
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <img src="img/collar.jpg" alt="Aretes">
+                                <div>
+                                    <p class="product-name">Collar de Oro</p>
+                                    <p class="product-sku">SKU# 1324651DAQ</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-bold">$15.000</td>
+                        <td>
+                            <div class="quantity-control">
+                                <button class="qty-btn">-</button>
+                                <span class="qty-num">1</span>
+                                <button class="qty-btn">+</button>
+                            </div>
+                            <p class="stock-label">IN-STOCK: <span>5</span></p>
+                        </td>
+                        <td class="text-bold">$0</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <img src="img/camisa.jpg" alt="Pintura">
+                                <div>
+                                    <p class="product-name">Camisa Estampada</p>
+                                    <p class="product-sku">SKU# 1324651DAQ</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-bold">$40.000</td>
+                        <td>
+                            <div class="quantity-control">
+                                <button class="qty-btn">-</button>
+                                <span class="qty-num">2</span>
+                                <button class="qty-btn">+</button>
+                            </div>
+                            <p class="stock-label">IN-STOCK: <span>5</span></p>
+                        </td>
+                        <td class="text-bold">$0</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <img src="img/brownie2.jpg" alt="Pintura">
+                                <div>
+                                    <p class="product-name">Brownie</p>
+                                    <p class="product-sku">SKU# 1324651DAQ</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-bold">$16.000</td>
+                        <td>
+                            <div class="quantity-control">
+                                <button class="qty-btn">-</button>
+                                <span class="qty-num">2</span>
+                                <button class="qty-btn">+</button>
+                            </div>
+                            <p class="stock-label">IN-STOCK: <span>5</span></p>
+                        </td>
+                        <td class="text-bold">$0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cart-totals">
+                <p>Pedido Subtotal: <strong>$0</strong></p>
+                <p>Orden Total: <strong>$71.000</strong></p>
+                <a href="pedido_confirmado.html" style="text-decoration: none;">
+    <button class="checkout-btn">CHECKOUT &rarr;</button>
+</a>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        /* Estilos para el Carrito */
+        .cart-main-container {
+            padding: 60px 10%;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff;
+        }
+
+        .cart-container-pink {
+            background-color: #FFF5F6; /* Rosa suave de la imagen */
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        .cart-title {
+            font-family: 'Cormorant Garamond', serif;
+            color: #2D5A41; /* Verde oscuro elegante */
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cart-table th {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .cart-table td {
+            padding: 25px 0;
+            background: #fff; /* Fondo blanco para las filas de productos */
+            border-bottom: 15px solid #FFF5F6; /* Espaciador del color del fondo */
+        }
+
+        /* Estilo de la Info del Producto */
+        .product-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-left: 20px;
+        }
+
+        .product-info img {
+            width: 80px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .product-name {
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .product-sku {
+            font-size: 10px;
+            color: #777;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .text-bold {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Controles de Cantidad */
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .qty-btn {
+            border: 1px solid #333;
+            background: none;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .stock-label {
+            font-size: 10px;
+            text-align: center;
+            margin-top: 5px;
+            color: #777;
+            font-weight: bold;
+        }
+
+        .stock-label span {
+            color: #2D5A41;
+        }
+
+        /* Totales y Botón Checkout */
+        .cart-totals {
+            text-align: right;
+            margin-top: 40px;
+            color: #333;
+        }
+
+        .cart-totals p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        .checkout-btn {
+            background-color: #84B19B; /* Verde menta del botón */
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 12px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .checkout-btn:hover {
+            background-color: #6d9682;
+        }
+
+        /* Ajuste de alineación para la tabla */
+        th:nth-child(2), td:nth-child(2),
+        th:nth-child(3), td:nth-child(3),
+        th:nth-child(4), td:nth-child(4) {
+            text-align: center;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+    <!-- FOOTER -->
+    <section id="contacto" class="footer-container">
+
+        <div class="footer-col branding">
+            <h1 class="logo1">MarketHub</h1>
+            <p>Correo: MarketHub_OFC@gmail.com</p>
+
+            <div class="social-links">
+                <p>Redes sociales</p>
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-col resources">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Emprendimientos</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col contact-form">
+            <h3>Contacto</h3>
+            <form>
+                <div class="contacto">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Mensaje"></textarea>
+                <button class="enviar">Enviar</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="derechos">
+        <h3>© 2026 MarketHub. Todos los derechos reservados</h3>
+    </section>
+
+</body>
+
+</html>

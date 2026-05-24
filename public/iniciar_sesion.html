@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+
+    <link rel="stylesheet" href="style/style_login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1>MarketHub</h1>
+        <h2>Inicia sesión</h2>
+
+        <button class="btn-social google">
+            Inicia sesión con Google
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png">
+        </button>
+
+        <button class="btn-social facebook">
+            Inicia sesión con Facebook
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+        </button>
+
+        <div class="divider">
+            <span>Or</span>
+        </div>
+
+        <!-- Formulario -->
+        <form id="loginForm">
+
+            <div class="input-group">
+                <label>Dirección de correo electrónico</label>
+                <input id="correo" type="email" placeholder="Escribe tu correo">
+            </div>
+
+            <div class="input-group">
+                <label>Contraseña</label>
+                <input id="contraseña" type="password" placeholder="Escribe tu contraseña">
+            </div>
+
+            <button type="submit" class="btn-login">Inicia sesión</button>
+
+            <p id="loginError" class="login-error"></p>
+        </form>
+
+        <p class="register-text">
+            No tienes una cuenta? <a href="registrarse.html">Regístrate</a>
+        </p>
+
+        <!-- Redes -->
+        <div class="social-icons">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
